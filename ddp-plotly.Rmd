@@ -8,9 +8,13 @@ output: ioslides_presentation
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+``` {r}
+my_date<-format(Sys.time(), "%a %b %d %X %Y")
+```
 
-## Course Project 2 slides
-
+## Course Project 2 slides 
+  
+  - Created on `r my_date`
   - This is the slide deck for the course project. 
   - It utilizes the mtcars dataset to illustrate interactive plots with plotly
 
