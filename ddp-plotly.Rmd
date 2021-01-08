@@ -1,0 +1,33 @@
+---
+title: "Developing Data Products Course Project 2"
+author: "koraxus"
+date: "1/7/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Course Project 2 slides
+
+  - This is the slide deck for the course project. 
+  - It utilizes the mtcars dataset to illustrate interactive plots with plotly
+
+
+## Summary Of The Cars Dataset
+
+```{r cars, echo = TRUE}
+summary(mtcars)
+```
+
+## Weight (1000 lbs) Vs MPG
+
+```{r, message = FALSE, warning= FALSE}
+library(plotly)
+
+plot_ly(mtcars, x = mtcars$wt, y  = mtcars$mpg, mode="markers")
+
+```
+
+## Thank You
